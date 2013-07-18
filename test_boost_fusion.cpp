@@ -12,7 +12,8 @@
 namespace fusion = boost::fusion;
 
 template<typename T>
-class Base{
+class Base
+{
 protected:
    int get_result() const{
       return static_cast<const T*>(this)->a;
@@ -42,7 +43,6 @@ class TYPE_3 : public Base<TYPE_3>
 public:
    using Base<TYPE_3>::get_result;
 };
-
 
 struct Stateful
 {
